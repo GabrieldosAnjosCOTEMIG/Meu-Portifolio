@@ -1,0 +1,564 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: #FF9327;
+}
+
+
+.main-website {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65vh;
+}
+
+.selection-header {
+    width: 90%;
+    height: 7vh;
+    background-color: transparent;
+    border: #FF7700 solid 2.5px;
+    border-radius: 50px;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7.5%;
+    position: sticky;
+    top: 2.6%;
+    z-index: 999;
+}
+
+.header-pin {
+    width: 40px;
+    height: 40px;
+    margin-right: 30vh;
+    transition: ease 0.2s;
+}
+
+.header-red {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.home {
+    background-image: url(WebsiteDebris/home.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.book {
+    background-image: url(WebsiteDebris/open-book.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.briefcase {
+    background-image: url(WebsiteDebris/briefcase.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.lamp {
+        background-image: url(WebsiteDebris/idea.png);
+        background-position: center;
+        background-size: contain;
+}
+
+#last {
+    margin: 0;
+}
+
+.phone {
+    background-image: url(WebsiteDebris/phone-call.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.lamp:hover {
+    background-image: url(WebsiteDebris/idea2.png);
+    scale: 1.17;
+}
+
+.home:hover {
+    background-image: url(WebsiteDebris/home2.png);
+    scale: 1.17;
+}
+
+.book:hover {
+    background-image: url(WebsiteDebris/open-book2.png);
+    scale: 1.17;
+}
+
+.briefcase:hover {
+    background-image: url(WebsiteDebris/briefcase2.png);
+    scale: 1.17;
+}
+
+.phone:hover {
+    background-image: url(WebsiteDebris/phone-call2.png);
+    scale: 1.17;
+}
+
+
+#main-title {
+    width: 60%;
+    font-size: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 850;
+    line-height: 110%;  
+    color: transparent;
+    background-image: linear-gradient(90deg, #FF9730 0%, #9E4F0B 100%);
+    background-clip: text;
+    text-align: center;
+    animation: aparecer 3s ease-out;
+    position: relative;
+}
+
+#subtitle {
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 850;
+    line-height: 100%;
+    color: gray;
+    position: relative;
+    animation: aparecer2 1.75s ease;
+}
+
+
+@keyframes aparecer {
+
+    0% {
+        bottom: 80px;
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 0.75;
+    }
+
+    86% {
+        opacity: 0;
+    }
+
+    89% {
+        opacity: 10;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 10;
+    }
+
+    98% {
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 10;
+    }
+
+}
+
+@keyframes aparecer2 {
+
+    0% {
+        top: 175px;
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0.75;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 10;
+    }
+
+}
+
+.info-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60vh;
+}
+
+.about-me-container {
+    width: 70%;
+    height: 85vh;
+    background-color: #282828;
+    border: solid 3px #FF7700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.deco-container1 {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.deco1 {
+    width: 100%;
+    height: 9.5vh;
+    background-color: #FF7700;
+    z-index: -1;
+    margin-bottom: 10vh;
+}
+
+.about-me {
+    width: 98.75%;
+    height: 98%;
+    background-color: #353535;
+    border: solid 3px #FF7F00;
+    border-radius: 20px;
+    padding: 4vh;
+    display: flex;
+}
+
+#about-info {
+    width: 60%;
+    height: fit-content;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 160%;
+    color: white;
+    margin-right: 80px;
+}
+
+#about-info div {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 96px;
+    color: #FF9327;
+    margin-bottom: 12vh;
+    line-height: 1;
+}
+
+#literallyme {
+    width: 35%;
+    height: 97.5%;
+    background-color: white;
+    transition: ease 0.3s;
+}
+
+#literallyme:hover {
+    scale: 1.05;
+}
+
+.capacities-section {
+    text-align: center;
+    margin-bottom: 35vh;
+}
+
+.capacities-section h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 96px;
+    color: transparent;
+    -webkit-text-stroke: 2.5px #FF9327;
+    margin-bottom: 30vh;
+}
+
+.capacities-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    height: 90vh;
+    margin-bottom: 30vh;
+}
+
+#capacities-slice {
+    font-family: "Inter", sans-serif;
+    width: 75%;
+    background-color: #353535;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 130%;
+    font-weight: bold;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+#capacities-slice hr {
+    color: #FF9327;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+
+.csharp h1 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5vh;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FF9327;
+    line-height: 130%;
+}
+
+.html h1 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5vh;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FF9327;
+    line-height: 130%;
+}
+
+.sql h1 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5vh;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FF9327;
+    line-height: 130%;
+}
+
+#capacities-slice:hover {
+    scale: 1.1;
+}
+
+.soft-skills-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-lid1 {
+    width: 60%;
+    height: 12.5%;
+    background-color: #FF9327;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#card-lid1 h1 {
+    font-family: "Open Sans", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3.5px #000000;
+    line-height: 100%;
+    margin: 0;
+    font-weight: 1000;
+}
+
+#soft-skills-card {
+    width: 60%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.3);  
+    transition: height 0.5s ease-in-out;
+    padding: 0;
+    position: relative;
+}
+
+#soft-skills-card h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    -webkit-text-stroke: 0;
+    opacity: 0;
+    margin-bottom: 5vh;
+    text-align: left;
+    transition: none
+}
+
+#soft-skills-card.aberto h1 {
+    opacity: 1;
+    transition: opacity 0.9s ease-in 0.5s;
+}
+
+#soft-skills-container2 {
+    height: fit-content;
+}
+
+#card-lid2 {
+    width: 60%;
+    height: 11%;
+    background-color: #FF9327;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-lid2 img {
+    scale: 1.4;
+}
+
+#card-lid2 input {
+    position: absolute;
+    scale: 7;
+    opacity: 0;
+}
+
+.projects-section {
+    text-align: center;
+    width: 100%;
+}
+
+#projects-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 114px;
+    font-weight: 800;
+    color: #FF9327;
+    -webkit-text-stroke: 3.5px #945515;
+    margin-bottom: 20vh;
+}
+
+#myprojects-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    height: fit-content;
+    text-align: left;
+}
+
+.myprojects {
+    width: 75%;
+    height: 75vh;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    font-size: 96px;
+    line-height: 100%;
+    padding: 50px 30px;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+.myprojects p {
+    position: absolute;
+    z-index: 999;
+}
+
+#redirect-button {
+    width: 20%;
+    height: 20%;
+    background-color: #2A2A2A;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -90deg;
+    transition: 0.3s ease;
+}
+
+#redirect-button img {
+    scale: 1.4;
+}
+
+#redirect-button:hover {
+    scale: 1.2;
+}
+
+.myprojects-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+}
+
+.scorchz {
+    background-image: url(WebsiteDebris/scorchz.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#redirect-button a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.links-section {
+    text-align: center;
+}
+
+#links-title {
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 114px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 4px #FF9327;
+    margin-bottom: 10vh;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15vh;
+}
+
+.mymedia {
+    font-size: 144px;
+    font-family: "Open Sans", sans-serif;
+    color: #FF9327;
+    font-weight: 850;
+    text-decoration: underline;
+    -webkit-text-stroke: 4px black;
+}
+
+.mymedia a {
+    -webkit-text-stroke: 4px black;
+}
+
+.myfooter {
+    width: 100%;
+    height: 50vh;
+    background-color: #151515;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.myfooter h1 {
+    margin-bottom: 4vh;
+}
